@@ -6,7 +6,7 @@ export default function signIn(){
         <input  type="text" placeholder="username" />
         <input  type="text" placeholder="password" />
         <button>
-            Submit
+          Submit
         </button>
     </div>
 } 
