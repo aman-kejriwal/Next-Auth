@@ -10,6 +10,7 @@ const handler = NextAuth({
           password: { label: 'password', type: 'password', placeholder: 'Password' },
         },
         async authorize(credentials: any) {
+          // user get here 
             return {
                 id: "user1" 
             };

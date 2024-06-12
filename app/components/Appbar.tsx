@@ -1,8 +1,18 @@
+"use client"
+import { signIn, signOut } from "next-auth/react";
+import { useRouter } from "next/navigation"
 
-export function Appbar(){
+const Appbar=()=>{
+    const router =useRouter();
     return (
         <div>
-           signIN 
+           <button onClick={()=>{
+               signIn();
+           }}>SignIn</button>
+           <button onClick={()=>{
+               signOut();
+           }}>Signout</button>
        </div>
     )
 }
+export default Appbar;
